@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>We make magic</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			background-color: black;
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 1360px;
+			margin: 0 auto;
+		}
+
+		.logo{
+			max-width: 100%;
+			background-color: rgb(1, 114, 217);
+			height: 75px;
+		}
+		/*.box1{
+			max-width: 100%;
+			background-color: rgb(0, 126, 243);
+			height: 700px;  /*top: 100px, bottom: 100px
+		}*/
+
+		.box1{
+			/*max-width: 100%;*/
+			width: 100%;
+			height: 775px;
+			float: left;
+			background-color: rgb(0, 126, 243);
+			/*text-align: center;*/
+			font-family: 'Roboto-Bold', sans-serif;
+
+		}
+
+		.logo{
+			max-width: 100%;
+			background-color: rgb(1, 114, 217);
+			height: 75px;
+		}
+
+		.logow{
+			padding-left: 20px;
+
+		}
+		.worker{
+			margin-right: 150px;
+			float: right;
+		}
+
+		/*.box1 h1{
+			width: 300px;
+			margin-top: 0;
+			text-align: center;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 60px;
+			text-align: start;
+			color: white;
+		}*/
+
+		/*h1 p{
+			margin:0 300px;
+			text-align: center;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 60px;
+		}*/
+		.wemake{
+			width: 360px;
+			height: 400px;
+			margin-left: 200px;
+			padding-top: 200px;
+		}
+
+		.box1 p{
+			color: white;
+			font-family: 'Roboto-Thin', sans-serif;
+		}
+
+		.box1 button{
+			background-color: rgb(0, 126, 243);
+			color: white;
+			font-family: 'Roboto-Thin', sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			padding: 15px 50px;
+			border-radius: 6px;
+			margin-top: 30px;
+			border: 1 solid white;
+		}
+		
+		 /*what do we do?*/
+		.box2{
+			max-width: 100%;
+			background-color: white;
+			text-align: center;
+			font-family: 'Roboto-Bold', sans-serif;
+			padding-top: 80px;
+			padding-bottom: 80px;
+			
+			
+		}
+		.box2 h1, p{			
+			/*margin:0 300px;*/
+		}
+
+		.box2 h1{
+			font-size: 40px;
+		}
+		.box2 p{
+			padding-top: 40px;
+			line-height: 24px;
+			color: #777;
+		}
+		
+		/* How do we do it? */
+		.box3{
+			max-width: 100%;
+			height: 920px;
+			background-color: rgb(0, 126, 243);
+			display: grid;
+			grid-template-columns: 680px 680px;
+			grid-template-rows: 460px 460px;
+			text-align: left;
+			font-family: 'Roboto-Thin', sans-serif;
+			color: white;
+
+		}
+		.box3 h1{
+			margin-top: 0;
+			margin-bottom: 0;
+			
+		}
+
+		.box3 ul {
+			list-style: none;
+		}
+		.list-group li{
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			text-align: left;
+		}
+		
+		div .imgbox3{
+			background-color: rgb(0, 103, 199);
+		}
+
+		.box4{
+			max-width: 100%;
+			height: 870px; /*top,bottom: 80px*/
+			background-color: white;
+		}
+
+		/* Do you want to start with B-system today? */
+		.box5{
+			background-color: rgb(244, 244, 244);
+			max-width: 100%;
+			height: 250px;
+			font-family: 'Roboto-Thin', sans-serif;
+			font-size: 24px;
+			text-align: center;
+		}
+		.box5 p{
+			padding-top: 80px;
+			margin-top:0 ;
+			margin-bottom: 0;
+
+		}
+		.box5 button{
+			background-color: rgb(0, 126, 243);
+			color: white;
+			font-family: 'Roboto-Thin', sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			padding: 15px 40px;
+			border-radius: 6px;
+			margin-top: 30px;
+			border: none;
+			/*box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;*/
+		}
+
+		/* medias: Be, youtube, twitter, instagram */
+		.medias{
+		    padding-bottom: 60px;
+		    padding-top: 60px ;
+		    background-color: white;
+		  }
+		  .media{
+		    display: flex;
+		    justify-content: center;
+		  }
+
+		  footer{
+			  padding-bottom: 140px;
+			  padding-top: 60px;
+			  background-color: white;
+			  border-top: 1px solid #eee;
+			}
+			footer div{
+			  display: flex;
+			  justify-content: center;
+			}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box1">
+			<div class="logo">
+				<img class="logow" src="images/logo_white.svg" alt="logo white">
+			<!-- </div>
+			<div> -->
+				<img class="worker" src="images/Man_working.png" alt="">
+			</div>
+		<!-- </div>
+		<div class="box1"> -->
+			<div class="wemake">
+				<h1>We make Magic!</h1>
+				<p>We are a freelance design studio passionate about rethinking how things operate every day.</p>
+				<button class="meetb">Meet B_system</button>
+			<!-- <img src="images/Man_working.png" alt=""> -->
+			</div>
+		</div>
+
+		<div class="box2">
+			<h1>What do we do?</h1>
+			<p>We design digital products, services, and systems with the goal of enriching and improving the way people use things. We put people first, to design, build and launch experiences that redefine industries in our constantly evolving digital era.</p>
+		</div>
+
+		<div class="box3">
+			<div>
+				<h1>How do we do it?</h1>
+				<p>Putting our client's users at the center of the conversation, and giving solutions from design to complex problems. No matter the size of the project, we use these principles to guide our way to create impact.</p>
+			</div>
+			<div><img src="images/usingmac2.jpg" alt="usingmac"></div>
+			<div class="imgbox3"><img src="images/deskblack.png" alt="desk"></div>
+			<div>
+				<h1>Our values</h1>
+				<ul class="list-group">
+					<li>Simple and intuitive design
+						<span>-</span>
+					</li>
+					<li>If the desgin works in your mind, it works in your heart.<span></span>
+					</li>
+					<li>Emotions and data in the same bag<span>+</span>
+					</li>
+					<li>Curiosity rules the study<span>+</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="box4">
+			
+		</div>
+
+		
+		<div class="box5">
+			
+			<p>Do you want to start with B-system today?</p>
+			<button>Start with B_system</button>
+		</div>
+
+		<div class="medias">
+			<div class="media">
+				<img src="images/be.svg" alt="be">
+				<img src="images/youtube.svg" alt="youtube">
+				<img src="images/pinterest.svg" alt="pinterest">
+				<img src="images/twitter.svg" alt="twitter">
+				<img src="images/instagram.svg" alt="instagram">
+			</div>
+		</div>
+		<footer>
+			<div>
+				<img src="images/logo_black.svg" alt="logo_white">
+			</div>
+		</footer>
+	</div>
+	
+</body>
+</html>
