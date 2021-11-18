@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			background-color: black;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container{
+			width: 1360px;
+			margin: 0 auto;			
+			background-color: white;
+		}
+
+		h1, p{
+			
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		/* header */
+		header{			
+			background-color: rgb(1,114,217);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+		}
+
+		li, a, button{
+			font-family: ;
+			font-weight: 500;
+			font-size: 18px;
+			color: white;
+			text-decoration: none;
+		}
+
+		.list{
+			list-style-type: none;
+		}
+
+		.list li{
+			display: inline-block;
+			padding: 0px 20px;
+
+		}
+
+		.list li a{
+			/*transition: all 0.3s ease 0s;*/
+		}
+
+		.list li a:hover{
+			color: background-color: rgb(0, 103, 199);
+		}
+
+		button{
+			padding: 9px 15px;
+			cursor: pointer;
+		}
+
+		.area{
+			background-color: #07e;
+			border: 1px solid white;
+			border-radius: 5px;
+			width: 140px;
+		}
+
+		/* main */
+		main{			
+			background-color: rgb(0,126,243);
+			height: 700px;
+		}
+		/*.main{
+			display: flex;
+			align-items: left;
+			justify-content: left;
+		}*/
+		.worker{
+			flex-basis: 60%;
+			position: absolute;
+			top: 0;
+			right: 400px;
+		}
+		.wemake{
+			width: 640px;
+			height: 400px;
+			padding-top: 200px;
+			padding-left: 200px;
+			text-align: left;
+
+		}
+
+		.wemake h1{
+			color: white;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 60px;
+			padding-bottom: 20px;
+		}
+
+		.wemake p{
+			color: white;
+			padding-bottom: 40px;
+			width: 380px;
+		}
+		.meetb{
+			border-radius: 5px;
+			border: 1px solid white;
+			background-color: rgb(0,126,243);
+			color: white;
+			padding: 10px 40px;
+		}
+
+		/* what do we do */
+		.box2 h1, p{
+			max-width: 100%;
+		}
+
+		.box2 h1{			
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 40px;
+			padding-top: 80px;
+			padding-bottom: 30px;
+			text-align: center;
+		}
+		.box2 p{
+			width: 680px;
+			margin-left: 400px;
+			text-align: center;
+			padding-bottom: 140px;
+			line-height: 1.6em;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 14px;
+			color: #ccc;
+		}
+
+		/* How do we do it? */
+		.box3{
+			max-width: 100%;
+			/*height: 920px;*/
+			background-color: rgb(0, 126, 243);
+			display: grid;
+			grid-template-columns: 680px 680px;
+			grid-template-rows: 460px 460px;
+			text-align: left;
+			font-family: 'Roboto-Thin', sans-serif;
+			color: white;
+
+		}
+		.imgbox3{
+			background-color: rgb(0, 103, 199);
+		}
+
+		.box3 section, p{
+			width: 350px;
+			height: 100px;
+			line-height: 1.6em;
+		}
+
+		.box3 h1{
+			margin-left: 180px;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 40px;
+			padding-top: 80px;
+			padding-bottom: 30px;
+		}
+
+		.box3 p{
+			margin-left: 180px;
+			text-align: left;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 14px;
+		}
+
+		.box3 ul {
+			list-style: none;
+		}
+		.box32 h1{
+			margin-left: 80px;
+		}
+		.list-group li{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			text-align: left;
+			line-height: 2.0em;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 14px;
+			margin-left: 40px;
+			width: 400px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+		}
+		hr{
+			width: 400px;
+			margin-left: 40px;
+			color: white;
+		}
+
+		/* Contact us - form */
+		.box4{
+			max-width: 100%;
+			display: flex;
+			align-items: left;
+			/*justify-content: space-evenly;*/
+			margin-top: 100px;
+			
+		}
+
+		.box4 h1{
+			margin-left: 200px;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 40px;
+			padding-bottom: 40px;
+		}
+		.box4 p{
+			margin-left: 200px;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 14px;
+			height: 40px;
+		}
+		.form{
+			width: 580px;
+			margin-left: 180px;
+			margin-right: 80px;
+			padding-bottom: 100px;
+
+		}
+		.woman{
+			width: 300px;
+			height: 340px;
+			background-color: #eff;
+			margin-top: 130px;
+		}
+		.woman img{
+			border-radius: 50%;
+			background-color: white;
+			padding: 20px 12px 0px 12px;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		.woman p{
+			width: 240px;
+			margin-left: 10px;
+			line-height: 1.6em;
+			height: 60px;
+
+		}
+
+		.phone p{
+			margin-left: 10px;
+			height: 5px;
+			margin-bottom: 20px;
+		}
+
+		.find{
+			border-top: 20px solid white;
+			background-color: rgb(247,247,247);
+		}
+		.find img{
+			padding: 0px;
+		}
+
+		/* Do you want to start with B-system today? */
+		.box4{
+			max-width: 100%;
+			/*height: 870px; top,bottom: 80px*/
+			background-color: white;
+		}
+
+		/* Do you want to start with B-system today? */
+		.box5{
+			background-color: rgb(244, 244, 244);
+			max-width: 100%;
+			height: 250px;
+			font-family: 'Roboto-Thin', sans-serif;
+			font-size: 24px;
+			text-align: center;
+			/*padding-bottom: 50px;*/
+		}
+		.box5 p{
+			padding-top: 60px;
+			/*margin-top:0 ;
+			margin-bottom: 0;*/
+			text-align: center;
+			width: 100%;
+			/*padding-bottom: 20px;*/
+
+		}
+		.box5 button{
+			background-color: rgb(0, 126, 243);
+			color: white;
+			font-family: 'Roboto-Thin', sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			padding: 15px 40px;
+			border-radius: 6px;
+			margin-top: 30px;
+			border: none;
+			/*box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;*/
+		}
+
+		/* medias: Be, youtube, twitter, instagram */
+		.medias{
+		    padding-bottom: 60px;
+		    padding-top: 60px ;
+		    background-color: white;
+		  }
+		  .media{
+		    display: flex;
+		    justify-content: center;
+		  }
+
+		  footer{
+			  padding-bottom: 140px;
+			  padding-top: 60px;
+			  background-color: white;
+			  border-top: 1px solid #eee;
+			}
+			footer div{
+			  display: flex;
+			  justify-content: center;
+			}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<header class="box1">
+				<img class="logo" src="images/logo_white.svg" alt="logo white">
+				<nav>
+					<ul class="list">
+						<li><a href="#" title="Our studio">Our studio</a></li>
+						<li><a href="#" title="Services">Services</a></li>
+						<li><a href="#" title="Designing for humans">Designing for humans</a></li>
+						<li><a href="#" title="Contact">Contact</a></li>
+					</ul>
+				</nav>
+				
+				<a href="#"><img src="images/searchr2.png" alt="search" style="padding-right: 15px; vertical-align: bottom;"><button class="area">Your area <img src="images/person.svg" alt="person"></button></a>
+		</header>
+		<main class="main">
+			<div class="wemake">
+				<h1>We make Magic!</h1>
+				<section>
+					<p>We are a freelance design studio passionate about rethinking how things operate every day.</p>
+					<button class="meetb">
+						<a href="#" title="be">Meet B_system</a>
+					</button>
+				</section>
+			</div>
+			<div class="worker">
+				<img src="images/Man_working.png" alt="">
+			</div>
+		</main>
+
+		<article>
+			<article>
+				<div class="box2">
+					<h1>What do we do?</h1>
+					<section>
+						<p>We design digital products, services, and systems with the goal of enriching and improving the way people use things. We put people first, to design, build and launch experiences that redefine industries in our constantly evolving digital era.</p>
+					</section>
+				</div>
+			</article>
+			<article>
+				<div class="box3">
+					<div>
+						<h1>How do we do it?</h1>
+						<section class="box31">
+							<p>Putting our client's users at the center of the conversation, and giving solutions from design to complex problems. No matter the size of the project, we use these principles to guide our way to create impact.</p>
+							<p>Learn mor <img src="images/arrow.svg" alt="arrow"></p>
+						</section>
+					</div>
+					<div><img src="images/usingmac2.jpg" alt="usingmac"></div>
+					<div class="imgbox3"><img src="images/deskblack.png" alt="desk"></div>
+					<div  class="box32">
+						<h1>Our values</h1>
+						<section>
+							<ul class="list-group">
+								<li>Simple and intuitive design
+									<span><img src="images/minus.svg"></span>
+								</li><hr>
+								<li class="li2">If the desgin works in your mind, it works in your heart.<span></span>
+								</li>
+								<li>Emotions and data in the same bag<span><img src="images/add.svg" alt=""></span>
+								</li><hr>
+								<li>Curiosity rules the study<span><img src="images/add.svg"></span>
+								</li><hr>
+							</ul>
+						</section>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="box4">
+					<div>
+						<h1>Contact us!</h1>
+						<section class="box41">
+							<p>Please fill out form to send your message:</p>
+							<img class="form" src="images/form.png" alt="form">
+						</section>
+					</div>
+					<div class="woman">
+						<div>
+							<img src="images/Woman_1.png" alt="woman">
+						</div>
+							
+							<p>If you have an urgent query you can call us:</p>
+							<section class="phone">
+							<p>T. (+34) 915 805 007</p>
+							<p>F. (+34) 915 806 082</p>
+							</section>
+						<div class="find">
+						<img src="images/local.png">
+						<p>Find our offices easily in our search</p>
+						</div>
+						
+					</div>
+					
+				</div>
+			</article>
+			<article>
+				<div class="box5">
+					
+					<p>Do you want to start with B-system today?</p>
+					<a href="#" title="Start with B_system"><button>Start with B_system</button></a>
+					
+				</div>
+
+				<div class="medias">
+					<div class="media">
+						<a href="#" title="be"><img src="images/be.svg" alt="be"></a>
+						<a href="#" title="youtube"><img src="images/youtube.svg" alt="youtube"></a>
+						<a href="#" title="pinterest"><img src="images/pinterest.svg" alt="pinterest"></a>
+						<a href="#" title="twitter"><img src="images/twitter.svg" alt="twitter"></a>
+						<a href="#" title="instagram"><img src="images/instagram.svg" alt="instagram"></a>
+					</div>
+				</div>
+			</article>
+		</article>
+		<footer>
+			<div>
+				<img src="images/logo_black.svg" alt="logo_white">
+			</div>
+		</footer>
+	</div>
+	
+</body>
+</html>
