@@ -88,6 +88,9 @@
 			display: flex;
 			align-items: left;
 			justify-content: left;
+			background-image: url("../images/Man_working.png");
+			background-repeat: no-repeat;
+			background-position: top right 100px;
 		}
 		
 
