@@ -24,15 +24,16 @@
 
 		/* header */
 		header{			
-			max-width: 100%;
+			/*max-width: 1360px;*/
+			/*width: 100%;*/
+			width: 1360px;
 			background-color: rgba(1,114,217,0.5);
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			padding: 20px;
 			position: absolute;
-			left: 0;
-			right: 0;
+			
 		}
 
 
@@ -50,7 +51,7 @@
 
 		.list li{
 			display: inline-block;
-			padding: 0px 20px;
+			padding: 0px 24px;
 
 		}
 
@@ -92,9 +93,6 @@
 
 		.worker{
 			flex-basis: 60%;
-			/*position: absolute;*/
-			/*top: 0px;*/
-			/*right: 400px;*/
 			padding-left: 100px;
 		}
 		.wemake{
@@ -206,14 +204,15 @@
 			font-size: 14px;
 			margin-left: 40px;
 			width: 400px;
-			padding-bottom: 10px;
-			padding-top: 10px;
+			/*padding-bottom: 10px;
+			padding-top: 10px;*/
+			padding: 10px 0;
 		}
-		hr{
+		/*hr{
 			width: 400px;
 			margin-left: 40px;
 			color: white;
-		}
+		}*/
 
 		/* Contact us - form */
 		.box4{
