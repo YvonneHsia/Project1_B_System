@@ -343,7 +343,7 @@
 
 		  footer{
 			  padding-bottom: 140px;
-			  padding-top: 60px;
+			  padding-top: 30px;
 			  background-color: white;
 			  border-top: 1px solid #eee;
 			}
@@ -351,3 +351,28 @@
 			  display: flex;
 			  justify-content: center;
 			}
+
+			.footer{
+			position: relative;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 18px;
+			color: #777;
+		}
+
+
+		.text-block{
+			position: absolute;
+			text-align: center;
+			padding-top: 20px;
+			padding-left: 530px;
+			/*padding-right: 570px;*/
+			display: block;
+
+		}
+
+		footer p{
+			height: 60px;
+			width: 320px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
