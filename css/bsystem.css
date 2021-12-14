@@ -1,0 +1,343 @@
+		/*all page*/
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			background-color: black;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* the width of the webpage  */
+		.container{
+			width: 1360px;
+			margin: 0 auto;			
+			background-color: white;
+		}
+
+		h1, p{
+			
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		/* header */
+		header{			
+			/*max-width: 1360px;*/
+			/*width: 100%;*/
+			width: 1360px;
+			background-color: rgba(1,114,217,0.5);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+			position: absolute;
+			
+		}
+
+
+		li, a, button{
+			
+			font-weight: 500;
+			font-size: 18px;
+			color: white;
+			text-decoration: none;
+		}
+
+		.list{
+			list-style-type: none;
+		}
+
+		.list li{
+			display: inline-block;
+			padding: 0px 24px;
+
+		}
+
+		.list li a{
+			/*transition: all 0.3s ease 0s;*/
+			transition: all 0.3s ease-in-out;
+		}
+
+		.list li a:hover{
+			background-color: rgb(0, 103, 199);
+			transform: scale(1.5);
+			box-shadow: 0 0 40px rgba(0,0,0,0.5);
+
+		}
+
+		button, li{
+			padding: 9px 15px;
+			cursor: pointer;
+		}
+
+
+		.area{
+			background-color: #07e;
+			border: 1px solid white;
+			border-radius: 5px;
+			width: 140px;
+		}
+
+		/* main */
+		main{			
+			max-width: 100;
+			background-color: rgb(0,126,243);
+			height: 800px;
+			display: flex;
+			align-items: left;
+			justify-content: left;
+			background-image: url("../images/Man_working.png");
+			background-repeat: no-repeat;
+			background-position: top right 100px;
+		}
+		
+
+		.worker{
+			flex-basis: 60%;
+			padding-left: 100px;
+		}
+		.wemake{
+			width: 640px;
+			height: 400px;
+			padding-top: 200px;
+			padding-left: 200px;
+			text-align: left;
+
+		}
+
+		.wemake h1{
+			color: white;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 60px;
+			padding-bottom: 20px;
+		}
+
+		.wemake p{
+			color: white;
+			padding-bottom: 40px;
+			width: 380px;
+		}
+		.meetb{
+			border-radius: 5px;
+			border: 1px solid white;
+			background-color: rgb(0,126,243);
+			color: white;
+			padding: 10px 40px;
+		}
+
+		/* what do we do */
+		.box2{
+			max-width: 100%;
+		}
+		.box2 h1, p{
+			max-width: 100%;
+		}
+
+		.box2 h1{			
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 40px;
+			padding-top: 80px;
+			padding-bottom: 30px;
+			text-align: center;
+		}
+		.box2 p{
+			width: 680px;
+			margin-left: 400px;
+			text-align: center;
+			padding-bottom: 140px;
+			line-height: 1.6em;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 14px;
+			color: #ccc;
+		}
+
+		/* How do we do it? */
+		.box3{
+			max-width: 100%;
+			/*height: 920px;*/
+			background-color: rgb(0, 126, 243);
+			display: grid;
+			grid-template-columns: 680px 680px;
+			grid-template-rows: 460px 460px;
+			text-align: left;
+			font-family: 'Roboto-Thin', sans-serif;
+			color: white;
+
+		}
+		.imgbox3{
+			background-color: rgb(0, 103, 199);
+		}
+
+		.box3 section, p{
+			width: 350px;
+			height: 100px;
+			line-height: 1.6em;
+		}
+
+		.box3 h1{
+			margin-left: 180px;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 40px;
+			padding-top: 80px;
+			padding-bottom: 30px;
+		}
+
+		.box3 p{
+			margin-left: 180px;
+			text-align: left;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 14px;
+		}
+
+		.box3 ul {
+			list-style: none;
+		}
+		.box32 h1{
+			margin-left: 80px;
+		}
+		.list-group li{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			text-align: left;
+			line-height: 2.0em;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 14px;
+			margin-left: 40px;
+			width: 400px;
+			/*padding-bottom: 10px;
+			padding-top: 10px;*/
+			padding: 10px 0;
+		}
+		/*hr{
+			width: 400px;
+			margin-left: 40px;
+			color: white;
+		}*/
+
+		/* Contact us - form */
+		.box4{
+			max-width: 100%;
+			display: flex;
+			/*align-items: left;*/
+			/*justify-content: space-evenly;*/
+			margin-top: 100px;
+			
+		}
+
+		.box4 h1{
+			margin-left: 200px;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 40px;
+			padding-bottom: 40px;
+		}
+		.box4 p{
+			margin-left: 200px;
+			font-family: 'Roboto-Regular', sans-serif;
+			font-size: 14px;
+			height: 40px;
+		}
+		.form{
+			width: 580px;
+			margin-left: 180px;
+			margin-right: 80px;
+			padding-bottom: 100px;
+
+		}
+		.woman{
+			width: 300px;
+			height: 340px;
+			background-color: #eff;
+			margin-top: 130px;
+		}
+		.woman img{
+			border-radius: 50%;
+			background-color: white;
+			padding: 20px 12px 0px 12px;
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		.woman p{
+			width: 240px;
+			margin-left: 10px;
+			line-height: 1.6em;
+			height: 60px;
+
+		}
+
+		.phone p{
+			margin-left: 10px;
+			height: 5px;
+			margin-bottom: 20px;
+		}
+
+		.find{
+			border-top: 20px solid white;
+			background-color: rgb(247,247,247);
+		}
+		.find img{
+			padding: 0px;
+		}
+
+		/* Do you want to start with B-system today? */
+		.box4{
+			max-width: 100%;
+			/*height: 870px; top,bottom: 80px*/
+			background-color: white;
+		}
+
+		/* Do you want to start with B-system today? */
+		.box5{
+			background-color: rgb(244, 244, 244);
+			max-width: 100%;
+			height: 250px;
+			font-family: 'Roboto-Thin', sans-serif;
+			font-size: 24px;
+			text-align: center;
+			/*padding-bottom: 50px;*/
+		}
+		.box5 p{
+			padding-top: 60px;
+			/*margin-top:0 ;
+			margin-bottom: 0;*/
+			text-align: center;
+			width: 100%;
+			/*padding-bottom: 20px;*/
+
+		}
+		.box5 button{
+			background-color: rgb(0, 126, 243);
+			color: white;
+			font-family: 'Roboto-Thin', sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			padding: 15px 40px;
+			border-radius: 6px;
+			margin-top: 30px;
+			border: none;
+			/*box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;*/
+		}
+
+		/* medias: Be, youtube, twitter, instagram */
+		.medias{
+		    padding-bottom: 60px;
+		    padding-top: 60px ;
+		    background-color: white;
+		  }
+		  .media{
+		    display: flex;
+		    justify-content: center;
+		  }
+
+		  footer{
+			  padding-bottom: 140px;
+			  padding-top: 60px;
+			  background-color: white;
+			  border-top: 1px solid #eee;
+			}
+			footer div{
+			  display: flex;
+			  justify-content: center;
+			}
