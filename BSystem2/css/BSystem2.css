@@ -11,7 +11,7 @@
 }
 body{
 	margin: 0;
-	padding:0 4vw;
+	padding: 0;
 }
 
 h1,
@@ -314,6 +314,10 @@ input[type="submit"]{
 .form-woman >p{
 	font-size: 0.6em;
 }
+
+.ecouteur{
+    display: none;
+}
 .find{
 	background-color: rgb(247,247,247);
 	margin: 2em 0;
@@ -385,7 +389,12 @@ footer p{
     /* body{
         background-color: blueviolet;
     } */
-
+	h1{
+		font-size: 2em;
+	}
+	h2{
+		font-size: 1.5em;
+	}
     .col1{
         justify-content: space-evenly;
 
@@ -457,5 +466,16 @@ footer p{
     .form-woman,
     .find{
         max-width: 100%;
+    }
+
+    .tete{
+        display: none;
+    }
+
+    .ecouteur{
+        display: block;
+        margin-top: 0.5em;
+        padding-top: 0;
+        padding-left: 0;
     }
 }
