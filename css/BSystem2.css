@@ -314,6 +314,10 @@ input[type="submit"]{
 .form-woman >p{
 	font-size: 0.6em;
 }
+
+.ecouteur{
+    display: none;
+}
 .find{
 	background-color: rgb(247,247,247);
 	margin: 2em 0;
@@ -457,5 +461,16 @@ footer p{
     .form-woman,
     .find{
         max-width: 100%;
+    }
+
+    .tete{
+        display: none;
+    }
+
+    .ecouteur{
+        display: block;
+        margin-top: 0.5em;
+        padding-top: 0;
+        padding-left: 0;
     }
 }
