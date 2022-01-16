@@ -22,7 +22,8 @@ h3{
 
 h1{
     font-size: 4em;
-}
+	font-family: 'Roboto-Regular', sans-serif;
+}	
 
 h2{
     font-size: 2.5em;
@@ -34,12 +35,14 @@ h3{
 
 p{
     font-size: 0.875em;
+	font-family: 'Roboto-Thin', sans-serif;
 }
 
 .container{
 	width: 80%;
 	max-width: 100%;
 	margin: 0 auto;	
+	min-width: 425px;
 }
 
 .row{
@@ -94,9 +97,6 @@ p{
 main{
 	max-width: 100%;
     display: grid;
-	/* background-image: url("images/Man_working.png");
-	background-repeat: no-repeat;
-	background-position: top right 2em; */
 	background-color:royalblue;
     grid-template-columns: repeat(2, 1fr);
 	gap:3em;
@@ -106,9 +106,6 @@ main{
 
 .main > h1{	
 	color: white;
-	font-family: 'Roboto-Regular', sans-serif;
-	/* font-size: 4em; */
-
 }
 
 .main-image{
@@ -141,13 +138,10 @@ main{
 }
 
 .aboutus > h1{
-	font-family: 'Roboto-Regular', sans-serif;
 	font-size: 3em;	
 }
 .aboutus > p{
 	line-height: 1.6em;
-	font-family: 'Roboto-Regular', sans-serif;
-	font-size: 0.8em;
 	color: #ccc;
 }
 
@@ -212,7 +206,6 @@ main{
 	display: flex;
 	justify-content: space-between;
 	line-height: 1.75em;
-	font-family: 'Roboto-Regular', sans-serif;
 	font-size: 0.75em;
 	padding-top: 1em;
 	
@@ -226,84 +219,46 @@ main{
 	max-width: 100%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	gap:3em;
+	/* gap:3em; */
 	justify-content: center;
 	align-items: center;
 	font-family: 'Roboto-Regular', sans-serif;
-	margin: 0 6em;
+	padding: 0 1em;
+	margin:0 2em;
 }
+
 
 .formulaire{
-	padding-top: 10vh;
-    margin: 0 2em
+	max-width: 100%;
 }
-
 .formulaire > h1{
 	margin-left: 0.3em;
-	font-size: 2.5em;
 }
 .formulaire > p{
 	margin-left: 1em;
-	font-size: 0.8em;
 }
 
-form > input[type="text"]{
-	line-height: 2em;
-	margin: 0.5em 0;
-	border: 0.2em solid rgba(204, 204, 204,0.5);
-	border-radius: 0.2em;
-	box-shadow: rgba(204, 204, 204, 0.16) 0px 1px 4px;
-	width:28em;
-	padding-left: 0.5em;
-}
-form input:focus{
-	/* 點擊時不會出現黑框 */
-	outline:none; 
-}
-form textarea{
-	border: 0.2em solid rgba(204, 204, 204,0.5);
-	border-radius: 0.2em;
-	padding-left: 0.5em;
-	width: 28em;
-	height: 10em;
-	display: block;
-	clear:both;
-	outline: none;
-}
-label{
-	display: inline-block;
-	width: 20em;
-	clear:both;
-	padding:1em 1em;
-	color: rgba(94, 91, 91, 0.5);
-}
-input[type="checkbox"]{
-	width:1.25em;
-	height:1.25em;
-	box-shadow: rgba(94, 91, 91, 0.5) 0px 1px 4px;
-}
-input[type="submit"]{
-	width: 5em;
-	height: 2.25em;
-	border: 0.2em solid rgb(204, 204, 204);
-	border-radius: 0.2em;
-	width:12em;
-	color: rgba(94, 91, 91, 0.5);
-	margin-bottom: 5em;
-	cursor: pointer;
-}
-.form div>img{
-	max-width: 40vw;
-	object-fit: contain;
-	padding-right:1.5em;
+.formulaire-imgs{
+	width: 100%;
+	max-height: 300vw;
 }
 
+.form-lg{
+	width:100%;
+	max-width: 100%;
+
+}
+.form-sm{
+	display: none;
+}
+
+.form-info{
+	margin-top:5em;
+	margin-left: 5em;
+}
 .form-woman{
-	max-width: 22vw;
 	background-color: rgb(200, 234, 247);
-	margin-top:4em;
-	padding: 1em 2em;
-
+	padding: 0.5em 2em;
 }
 .form-woman div>img:nth-of-type(1){
 	border-radius: 50%;
@@ -334,10 +289,12 @@ input[type="submit"]{
 	text-align: center;
 	background-color: rgb(244, 244, 244);
 	padding: 2em 1em;
-	font-family: 'Roboto-Thin', sans-serif;
-
 }
-.start_Bsystem input{
+
+.start_Bsystem h3{
+	font-family: 'Roboto-Thin', sans-serif;
+}
+.start_Bsystem button{
 	background-color: var(--second-color--);
 	padding: 0.8em 2em;
 	color:#fff;
@@ -353,21 +310,12 @@ input[type="submit"]{
 	height: 10em;
 	padding: 1em 10em;
 }
-.fa-behance,
-.fa-youtube,
-.fa-instagram,
-.fa-twitter,
-.fa-pinterest-p
-{
-	color:black;
-    padding: 0 0.5em;
-}
+
 footer{
 	max-width: 100%;
 	text-align: center;
 	padding: 1.5rem;
 	border-top: 0.1em solid #eee;
-	font-family: 'Roboto-Regular', sans-serif;
 	font-size: 1rem;
 	color: #777;
 	
@@ -389,10 +337,16 @@ footer p{
         background-color: blueviolet;
     } */
 	h1{
-		font-size: 3em;
+		font-size: 2em;
 	}
 	h2{
-		font-size: 1.5em;
+		font-size: 1.25em;
+	}
+	h3{
+		font-size: 0.8em;
+	}
+	p{
+		font-size: 0.55em;
 	}
     .col1{
         justify-content: space-evenly;
@@ -459,22 +413,36 @@ footer p{
     .form{
         grid-template-columns: 1fr;
     }
-    .formulaire{
-        margin: 0 1em;
-    }
+	.formulaire{
+		width: 100%;
+	}
+	.form-lg{
+		display: none;
+	}
+	.form-sm{
+		display: block;
+		width: 100%;
+		margin-bottom: 1em;		
+	}
     .form-woman,
     .find{
+		width: 100%;
         max-width: 100%;
     }
-
+	.form-info{
+		width: 100%;
+		margin: 0 auto;
+	}
     .tete{
         display: none;
     }
 
     .ecouteur{
-        display: block;
+        display: block;	
         margin-top: 0.5em;
         padding-top: 0;
         padding-left: 0;
+		max-width: 22vw;
     }
+
 }
