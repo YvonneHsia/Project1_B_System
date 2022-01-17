@@ -96,7 +96,7 @@ p{
  
 .main{
 	width: 100%;
-	max-width: 100%;
+	/* max-width: 100%; */
     display: grid;
 	background-color:var(--third-color--);
     grid-template-columns: repeat(2, 1fr);
@@ -107,6 +107,9 @@ p{
 	color: white;
 }
 
+.main img{
+	max-width: 100%;
+}
 .main .main-image{	
 	background-image: url("../images/Man_working.png");
 	background-repeat: no-repeat;
