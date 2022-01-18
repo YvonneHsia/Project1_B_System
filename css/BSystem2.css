@@ -42,7 +42,7 @@ p{
 	width: 1440px;
 	max-width: 100%;
 	margin: 0 auto;
-	min-width: 535px;
+	min-width: 319px;
 }
 
 .row{
@@ -101,7 +101,7 @@ p{
 	background-color:var(--third-color--);
     grid-template-columns: repeat(2, 1fr);
 	justify-content: center;
-	align-items: center;
+	align-items: top center;
 }
 .main > h1{	
 	color: white;
